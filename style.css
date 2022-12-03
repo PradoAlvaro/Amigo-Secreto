@@ -131,7 +131,7 @@ body {
 
 #modal {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 20%;
   z-index: 9999;
 
@@ -230,4 +230,13 @@ body {
 
 .card {
   margin: 1%;
+}
+
+#bg-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
 }

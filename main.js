@@ -23,7 +23,7 @@ const pessoasDaFamila = [
     image: "claudia.jpeg",
     tamanhos: {
       camisa: "P",
-      calca: "40",
+      calca: "38",
       tenis: "34",
     },
   },
@@ -365,42 +365,30 @@ function init() {
 
 init();
 
-const root = document.getElementById("root");
 const closedModal = document.getElementById("close-modal");
 const modal = document.getElementById("modal");
 const modalIsClosed = modal.style.display.includes("none");
+const bgcolor = document.getElementById("bg-modal");
 
 const openModalUser = (nome) => {
   const pessoa = pessoasDaFamila.find((pessoa) => pessoa.nome === nome);
-  console.log("open modal")
   modal.innerHTML = modalHtml(pessoa);
-  root.setAttribute(
-    "style",
-    `
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  `
-  );
   modal.style.display = "block";
+  bgcolor.style.display = "block"  
 };
 
 
+
+
+
 const closedModalUser = () => {
-  root.setAttribute("style", "");
   modal.style.display = "none";
+  bgcolor.style.display = "none"
 }
 
+bgcolor.addEventListener("click", closedModalUser)
 closedModal.addEventListener("click", closedModalUser);
-root.addEventListener("click", (element) => {
-  if(element.path[0].classList['0']?.includes("aboutMe")) return;
-  console.log("passou");
-  closedModalUser();
-})
-
 const input = document.getElementById("inputBusca");
-
 input.addEventListener("input", (event) => {
   filter = event.target.value.toLowerCase().trim();
   init()
