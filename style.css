@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,300;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.card .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #7d2ae8;
+}
+
+.card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  width: 280px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 45%;
+  width: 100%;
+  background: #7d2ae8;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+.card .media-icons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .media-icons i {
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .media-icons i:hover {
+  opacity: 1;
+}
+.card .name-profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+.name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+.card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.card .rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #7d2ae8;
+}
+.card .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.card .button button {
+  background: #7d2ae8;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background: #6616d0;
+}
+
+#modal {
+  display: none;
+  position: absolute;
+  top: 20%;
+  z-index: 9999;
+
+  background: #7da759;
+
+  width: 90%;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 700px) {
+  #modal {
+    width: 25%;
+  }
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-body {
+  position: relative;
+  margin-top: 30px;
+  min-height: 200px;
+  background-color: #7da759;
+}
+
+.sizes img {
+  width: 40px;
+  height: 32px;
+}
+
+.sizes {
+  padding: 1rem 0;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-size {
+  display: flex;
+  align-items: center;
+}
+
+.item-size span {
+  margin-left: 15px;
+}
+
+.modal-footer,
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  margin-top: 88px;
+}
+
+.closed-icon {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+
+  cursor: pointer;
+}
+
+
+#root {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 4rem 0;
+  height: 100vh;
+
+  
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 1%;
+}
