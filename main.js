@@ -206,7 +206,7 @@ const pessoasDaFamila = [
   {
     cor: "#7d2ae8",
     nome: "Mauricio",
-    apelido: "Mauricião",
+    apelido: "Maurição",
     image: "mauricio.jpeg",
     tamanhos: {
       camisa: "G",
@@ -222,7 +222,7 @@ const pessoasDaFamila = [
     tamanhos: {
       camisa: "GG",
       calca: "46",
-      tenis: "46",
+      tenis: "44",
     },
   },
   {
@@ -232,7 +232,7 @@ const pessoasDaFamila = [
     image: "carol.jpeg",
     tamanhos: {
       camisa: "14",
-      calca: "38",
+      calca: "36",
       tenis: "34",
     },
   },
@@ -254,7 +254,7 @@ const pessoasDaFamila = [
     image: "edu.jpeg",
     tamanhos: {
       camisa: "G",
-      calca: "38",
+      calca: "40",
       tenis: "41",
     },
   },
