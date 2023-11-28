@@ -62,6 +62,17 @@ const pessoasDaFamila = [
   },
   {
     cor: "#7d2ae8",
+    nome: "Sheila",
+    apelido: "Carminha",
+    image: "sheila.jpeg",
+    tamanhos: {
+      camisa: "P",
+      calca: "38",
+      tenis: "37",
+    },
+  },
+  {
+    cor: "#7d2ae8",
     nome: "Silvio",
     apelido: "Silvão",
     image: "silvio.jpeg",
@@ -69,6 +80,17 @@ const pessoasDaFamila = [
       camisa: "M",
       calca: "42",
       tenis: "41",
+    },
+  },
+  {
+    cor: "#7d2ae8",
+    nome: "Rodrigo",
+    apelido: "Rodriguinho",
+    image: "rodrigo.jpeg",
+    tamanhos: {
+      camisa: "M/G",
+      calca: "42",
+      tenis: "40",
     },
   },
   {
@@ -124,50 +146,6 @@ const pessoasDaFamila = [
       camisa: "10",
       calca: "10",
       tenis: "34",
-    },
-  },
-  {
-    cor: "#7d2ae8",
-    nome: "Alessandra",
-    apelido: "Dudu",
-    image: "dudu.jpeg",
-    tamanhos: {
-      camisa: "M/G",
-      calca: "42",
-      tenis: "36",
-    },
-  },
-  {
-    cor: "#7d2ae8",
-    nome: "Marcelo",
-    apelido: "Marcelo kk",
-    image: "marcelo.jpeg",
-    tamanhos: {
-      camisa: "M",
-      calca: "42",
-      tenis: "42",
-    },
-  },
-  {
-    cor: "#7d2ae8",
-    nome: "Bernardo",
-    apelido: "Bê",
-    image: "bernardo.jpeg",
-    tamanhos: {
-      camisa: "8",
-      calca: "8",
-      tenis: "29/30",
-    },
-  },
-  {
-    cor: "#7d2ae8",
-    nome: "Sofia",
-    apelido: "Sosô",
-    image: "sofia.jpeg",
-    tamanhos: {
-      camisa: "4",
-      calca: "4",
-      tenis: "25",
     },
   },
   {
@@ -238,11 +216,33 @@ const pessoasDaFamila = [
   },
   {
     cor: "#7d2ae8",
+    nome: "Matheus",
+    apelido: "Terror do ano novo",
+    image: "matheus.jpeg",
+    tamanhos: {
+      camisa: "GG",
+      calca: "46",
+      tenis: "46",
+    },
+  },
+  {
+    cor: "#7d2ae8",
+    nome: "Carol",
+    apelido: "Carolzinha",
+    image: "carol.jpeg",
+    tamanhos: {
+      camisa: "14",
+      calca: "38",
+      tenis: "34",
+    },
+  },
+  {
+    cor: "#7d2ae8",
     nome: "Álvaro",
     apelido: "Alvinho",
     image: "alvinho.jpeg",
     tamanhos: {
-      camisa: "G",
+      camisa: "GG",
       calca: "44",
       tenis: "39",
     },
@@ -264,7 +264,7 @@ const pessoasDaFamila = [
       apelido: "Pirulito",
       image: "bruno.jpeg",
       tamanhos: {
-        camisa: "M",
+        camisa: "G",
         calca: "42",
         tenis: "40",
       },
